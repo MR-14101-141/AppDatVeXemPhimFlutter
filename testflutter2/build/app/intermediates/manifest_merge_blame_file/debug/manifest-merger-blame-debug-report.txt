@@ -14,303 +14,348 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:3:5-67
 14-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:3:22-64
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
-15-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
-16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:5-68
-16-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:22-65
-17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-17-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:5-110
-17-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:22-107
-18
-19    <application
-19-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:4:4-41:19
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\fbf664f595d7ff9130aff871adf5780a\core-1.1.0\AndroidManifest.xml:24:18-86
-21        android:debuggable="true"
-22        android:icon="@mipmap/ic_launcher"
-22-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:6:9-43
-23        android:label="testflutter2"
-23-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:5:9-37
-24        android:usesCleartextTraffic="true" >
-24-->O:\On\ANDROID\testflutter2\android\app\src\debug\AndroidManifest.xml:7:18-53
+15
+16    <queries>
+16-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-11:15
+17        <intent>
+17-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-10:18
+18            <action android:name="android.support.customtabs.action.CustomTabsService" />
+18-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-90
+18-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:9:21-87
+19        </intent>
+20    </queries>
+21
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
+22-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:24:22-76
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:5-68
+23-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:24:22-65
+24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+24-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:5-110
+24-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:26:22-107
 25
-26        <!-- possibly other elements -->
-27        <activity
-27-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:7:9-35:20
-28            android:name="com.example.testflutter2.MainActivity"
-28-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:8:13-41
-29            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-29-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:11:13-163
-30            android:hardwareAccelerated="true"
-30-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:12:13-47
-31            android:launchMode="singleTop"
-31-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:9:13-43
-32            android:theme="@style/LaunchTheme"
-32-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:10:13-47
-33            android:windowSoftInputMode="adjustResize" >
-33-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:13:13-55
-34
-35            <!--
-36                 Specifies an Android theme to apply to this Activity as soon as
-37                 the Android process has started. This theme is visible to the user
-38                 while the Flutter UI initializes. After that, this theme continues
-39                 to determine the Window background behind the Flutter UI.
-40            -->
-41            <meta-data
-41-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:18:13-21:17
-42                android:name="io.flutter.embedding.android.NormalTheme"
-42-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:19:15-70
-43                android:resource="@style/NormalTheme" />
-43-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:20:15-52
-44            <!--
-45                 Displays an Android View that continues showing the launch screen
-46                 Drawable until Flutter paints its first frame, then this splash
-47                 screen fades out. A splash screen is useful to avoid any visual
-48                 gap between the end of Android's launch screen and the painting of
-49                 Flutter's first frame.
-50            -->
-51            <meta-data
-51-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:27:13-30:17
-52                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-52-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:28:15-79
-53                android:resource="@drawable/launch_background" />
-53-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:29:15-61
-54
-55            <intent-filter>
-55-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:31:13-34:29
-56                <action android:name="android.intent.action.MAIN" />
-56-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:32:17-68
-56-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:32:25-66
-57
-58                <category android:name="android.intent.category.LAUNCHER" />
-58-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:33:17-76
-58-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:33:27-74
-59            </intent-filter>
-60        </activity>
-61        <!--
-62 Don't delete the meta-data below.
-63             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-64        -->
-65        <meta-data
-65-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:38:9-40:33
-66            android:name="flutterEmbedding"
-66-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:39:13-44
-67            android:value="2" />
-67-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:40:13-30
-68
-69        <service
-69-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
-71            android:directBootAware="true"
-71-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-72            android:exported="false" >
-72-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
-73            <meta-data
-73-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-74                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-74-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-76            <meta-data
-76-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-77-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-79            <meta-data
-79-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
-80                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-80-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
-82            <meta-data
-82-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:30:13-32:85
-83                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-83-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:31:17-139
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:32:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
-86                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-86-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
-88        </service>
-89
-90        <activity
-90-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
-91            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-91-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
-92            android:excludeFromRecents="true"
-92-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
-93            android:exported="true"
-93-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
-94            android:launchMode="singleTask"
-94-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
-95            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-95-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
-96            <intent-filter>
-96-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
-97                <action android:name="android.intent.action.VIEW" />
-97-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-97-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-98
-99                <category android:name="android.intent.category.DEFAULT" />
-99-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-99-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-100                <category android:name="android.intent.category.BROWSABLE" />
-100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-100-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
-101
-102                <data
-102-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-103                    android:host="firebase.auth"
-103-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-104                    android:path="/"
-104-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-105                    android:scheme="genericidp" />
-105-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-106            </intent-filter>
-107        </activity>
-108        <activity
-108-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
-109            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-109-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
-110            android:excludeFromRecents="true"
-110-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
-111            android:exported="true"
-111-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
-112            android:launchMode="singleTask"
-112-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
-113            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-113-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
-114            <intent-filter>
-114-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
-115                <action android:name="android.intent.action.VIEW" />
-115-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
-115-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
-116
-117                <category android:name="android.intent.category.DEFAULT" />
-117-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-117-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-118                <category android:name="android.intent.category.BROWSABLE" />
-118-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
-118-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
-119
-120                <data
-120-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
-121                    android:host="firebase.auth"
-121-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
-122                    android:path="/"
-122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
-123                    android:scheme="recaptcha" />
-123-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
-124            </intent-filter>
-125        </activity>
+26    <application
+26-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:4:4-41:19
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\b501fc590dfeaec370bc73c1327042d6\core-1.3.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:6:9-43
+30        android:label="testflutter2"
+30-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:5:9-37
+31        android:usesCleartextTraffic="true" >
+31-->O:\On\ANDROID\testflutter2\android\app\src\debug\AndroidManifest.xml:7:18-53
+32
+33        <!-- possibly other elements -->
+34        <activity
+34-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:7:9-35:20
+35            android:name="com.example.testflutter2.MainActivity"
+35-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:8:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:11:13-163
+37            android:hardwareAccelerated="true"
+37-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:12:13-47
+38            android:launchMode="singleTop"
+38-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:9:13-43
+39            android:theme="@style/LaunchTheme"
+39-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:10:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:13:13-55
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+48-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:18:13-21:17
+49                android:name="io.flutter.embedding.android.NormalTheme"
+49-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:19:15-70
+50                android:resource="@style/NormalTheme" />
+50-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:20:15-52
+51            <!--
+52                 Displays an Android View that continues showing the launch screen
+53                 Drawable until Flutter paints its first frame, then this splash
+54                 screen fades out. A splash screen is useful to avoid any visual
+55                 gap between the end of Android's launch screen and the painting of
+56                 Flutter's first frame.
+57            -->
+58            <meta-data
+58-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:27:13-30:17
+59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+59-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:28:15-79
+60                android:resource="@drawable/launch_background" />
+60-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:29:15-61
+61
+62            <intent-filter>
+62-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:31:13-34:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:32:17-68
+63-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:32:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:33:17-76
+65-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:33:27-74
+66            </intent-filter>
+67        </activity>
+68        <!--
+69 Don't delete the meta-data below.
+70             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+71        -->
+72        <meta-data
+72-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:38:9-40:33
+73            android:name="flutterEmbedding"
+73-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:39:13-44
+74            android:value="2" />
+74-->O:\On\ANDROID\testflutter2\android\app\src\main\AndroidManifest.xml:40:13-30
+75
+76        <service
+76-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
+80            <meta-data
+80-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+81                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+81-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[:firebase_auth] O:\On\ANDROID\testflutter2\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+83            <meta-data
+83-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+84                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+84-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[:firebase_core] O:\On\ANDROID\testflutter2\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+87                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+87-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+89            <meta-data
+89-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:30:13-32:85
+90                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+90-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:31:17-139
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-measurement-api:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\5a6549a1d3b1b9637e15c2f0b600dc87\jetified-play-services-measurement-api-19.0.2\AndroidManifest.xml:32:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+93                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+93-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\037df4e5b1398bc0881251583b262f7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+95        </service>
+96
+97        <activity
+97-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:47
+98            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+98-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-104
+99            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+99-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-137
+100            android:theme="@style/AppTheme" />
+100-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-44
+101        <activity
+101-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-20:55
+102            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+102-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-112
+103            android:theme="@style/ThemeTransparent" />
+103-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-52
+104
+105        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver" />
+105-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-120
+105-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:22:19-117
+106
+107        <meta-data
+107-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-26:36
+108            android:name="io.flutter.embedded_views_preview"
+108-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-61
+109            android:value="true" />
+109-->[:flutter_inappwebview] O:\On\ANDROID\testflutter2\build\flutter_inappwebview\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-33
+110
+111        <activity
+111-->[:url_launcher_android] O:\On\ANDROID\testflutter2\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+112            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+112-->[:url_launcher_android] O:\On\ANDROID\testflutter2\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+113            android:exported="false"
+113-->[:url_launcher_android] O:\On\ANDROID\testflutter2\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+114            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+114-->[:url_launcher_android] O:\On\ANDROID\testflutter2\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+115        <activity
+115-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+116            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+116-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+122-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+123
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+124-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+125-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
 126
-127        <service
-127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
-128            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
-129            android:enabled="true"
-129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
-130            android:exported="false" >
-130-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
-131            <intent-filter>
-131-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
-132                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-132-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
-132-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
-133
-134                <category android:name="android.intent.category.DEFAULT" />
-134-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
-134-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
-135            </intent-filter>
-136        </service>
-137
-138        <provider
-138-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-139            android:name="com.google.firebase.provider.FirebaseInitProvider"
-139-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-140            android:authorities="com.example.testflutter2.firebaseinitprovider"
-140-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-141            android:directBootAware="true"
-141-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-142            android:exported="false"
-142-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-143            android:initOrder="100" />
-143-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+127                <data
+127-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+128                    android:host="firebase.auth"
+128-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+129                    android:path="/"
+129-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+130                    android:scheme="genericidp" />
+130-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+131            </intent-filter>
+132        </activity>
+133        <activity
+133-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+134            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+134-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+135            android:excludeFromRecents="true"
+135-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+136            android:exported="true"
+136-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+137            android:launchMode="singleTask"
+137-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+138-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+139            <intent-filter>
+139-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+140                <action android:name="android.intent.action.VIEW" />
+140-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+140-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+142-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+143                <category android:name="android.intent.category.BROWSABLE" />
+143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+143-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
 144
-145        <activity
-145-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
-146            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-146-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
-147            android:excludeFromRecents="true"
-147-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
-148            android:exported="false"
-148-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
-149            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-149-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
-150        <!--
-151            Service handling Google Sign-In user revocation. For apps that do not integrate with
-152            Google Sign-In, this service will never be started.
-153        -->
-154        <service
-154-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
-155            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-155-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
-156            android:exported="true"
-156-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
-157            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-157-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+145                <data
+145-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+146                    android:host="firebase.auth"
+146-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+147                    android:path="/"
+147-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+148                    android:scheme="recaptcha" />
+148-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+149            </intent-filter>
+150        </activity>
+151
+152        <service
+152-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+153            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+153-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+154            android:enabled="true"
+154-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+155            android:exported="false" >
+155-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+156            <intent-filter>
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+157                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
 158
-159        <activity
-159-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-160-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-161            android:exported="false"
-161-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-162-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-163
-164        <receiver
-164-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:29:9-33:20
-165            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-165-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:30:13-85
-166            android:enabled="true"
-166-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:31:13-35
-167            android:exported="false" >
-167-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:32:13-37
-168        </receiver>
+159                <category android:name="android.intent.category.DEFAULT" />
+159-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+159-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\8ab6d74caaf81e31d5e5a72cb840779b\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+160            </intent-filter>
+161        </service>
+162
+163        <provider
+163-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+164            android:name="com.google.firebase.provider.FirebaseInitProvider"
+164-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+165            android:authorities="com.example.testflutter2.firebaseinitprovider"
+165-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+166            android:directBootAware="true"
+166-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+167            android:exported="false"
+167-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+168            android:initOrder="100" />
+168-->[com.google.firebase:firebase-common:20.0.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\ee33a52787588d565a4ebf9159306f6a\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 169
-170        <service
-170-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:35:9-38:40
-171            android:name="com.google.android.gms.measurement.AppMeasurementService"
-171-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:36:13-84
-172            android:enabled="true"
-172-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:37:13-35
-173            android:exported="false" />
-173-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:38:13-37
-174        <service
-174-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:39:9-43:72
-175            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-175-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:40:13-87
-176            android:enabled="true"
-176-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:41:13-35
-177            android:exported="false"
-177-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:42:13-37
-178            android:permission="android.permission.BIND_JOB_SERVICE" />
-178-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:43:13-69
-179
-180        <meta-data
-180-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
-181            android:name="com.google.android.gms.version"
-181-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
-182            android:value="@integer/google_play_services_version" />
-182-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
-183    </application>
-184
-185</manifest>
+170        <activity
+170-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+171            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+171-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+172            android:excludeFromRecents="true"
+172-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+173            android:exported="false"
+173-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+175        <!--
+176            Service handling Google Sign-In user revocation. For apps that do not integrate with
+177            Google Sign-In, this service will never be started.
+178        -->
+179        <service
+179-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+180            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+180-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+181            android:exported="true"
+181-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+182            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+182-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\deae75cb93c46fb80df301df6ff91122\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+183
+184        <activity
+184-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+185            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+185-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+186            android:exported="false"
+186-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+187-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\d9d729e185d0f323115a3f1a78e84468\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+188
+189        <receiver
+189-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:32:13-37
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:35:9-38:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:36:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:37:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:38:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:39:9-43:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:40:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:41:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:42:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" />
+203-->[com.google.android.gms:play-services-measurement:19.0.2] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\f718ee540ae33d4a83c72b28629c3e47\jetified-play-services-measurement-19.0.2\AndroidManifest.xml:43:13-69
+204
+205        <meta-data
+205-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+206            android:name="com.google.android.gms.version"
+206-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+207            android:value="@integer/google_play_services_version" />
+207-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\AngleOfPeace\.gradle\caches\transforms-2\files-2.1\4021128eff38a6abe38ca27ec1afb2c0\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+208    </application>
+209
+210</manifest>

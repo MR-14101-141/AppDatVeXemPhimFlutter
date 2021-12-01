@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:sizer/sizer.dart';
 import 'package:testflutter2/Animation/_fadeanimation.dart';
+import 'package:testflutter2/screen/ghelist_screen.dart';
 
 class SuatChieuScreen extends StatefulWidget {
   const SuatChieuScreen({Key? key, required this.title, required this.idPhim})
@@ -20,40 +21,45 @@ class _SuatChieuScreen extends State<SuatChieuScreen> {
   late List lst;
   late bool loading = true;
 
-  Future<void> loaddssc(int idphim) async {
-    final response = await get(
-        Uri.parse('http://10.0.2.2/tttn/public_html/home/dsSC/$idphim'));
+  Future<void> loaddssc() async {
+    final response = await get(Uri.parse(
+        'http://10.0.2.2/tttn/public_html/home/dsSC/${widget.idPhim}'));
     setState(() {
       dssc = json.decode(response.body);
       loading = false;
     });
   }
 
-  _pullRefresh() {
-    loaddssc(widget.idPhim);
+  Future<void> pullRefresh() async {
+    setState(() {
+      loading = true;
+    });
+    loaddssc();
   }
 
   @override
   void initState() {
     super.initState();
-    loaddssc(widget.idPhim);
+    loaddssc();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.cyan.shade50,
-        body: (loading)
+      backgroundColor: Colors.cyan.shade50,
+      body: Column(children: [
+        _backbtn(),
+        Padding(padding: EdgeInsets.only(top: 2.h)),
+        (loading)
             ? const Center(child: CircularProgressIndicator())
             : RefreshIndicator(
-                onRefresh: _pullRefresh(),
+                onRefresh: pullRefresh,
                 child: SingleChildScrollView(
-                    child: Column(children: [
-                  _backbtn(),
-                  Padding(padding: EdgeInsets.only(top: 2.h)),
-                  _suatchieu(),
-                ])),
-              ));
+                  physics: const AlwaysScrollableScrollPhysics(),
+                  child: _suatchieu(),
+                ))
+      ]),
+    );
   }
 
   Widget _backbtn() {
@@ -85,13 +91,22 @@ class _SuatChieuScreen extends State<SuatChieuScreen> {
     );
   }
 
-  Widget _giochieu(giochieu) {
+  Widget _giochieu(sc) {
     return Padding(
       padding: EdgeInsets.all(1.h),
       child: ElevatedButton(
-          onPressed: () => {},
+          onPressed: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => GheListScreen(
+                            title: 'detail',
+                            idSC: sc['idSC'],
+                          )),
+                )
+              },
           child: Text(
-            giochieu,
+            sc['giochieu'].toString().substring(0, 5),
             style: TextStyle(fontSize: 25.sp),
           )),
     );
@@ -107,8 +122,7 @@ class _SuatChieuScreen extends State<SuatChieuScreen> {
           child: Column(children: [
             _ngaychieu(key),
             for (List<dynamic> value in dssc.values)
-              for (Map<String, dynamic> sc in value)
-                _giochieu(sc['giochieu'].toString().substring(0, 5)),
+              for (Map<String, dynamic> sc in value) _giochieu(sc),
           ]));
     }
     return const CircularProgressIndicator();

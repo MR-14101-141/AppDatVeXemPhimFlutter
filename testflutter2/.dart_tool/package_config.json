@@ -170,6 +170,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_inappwebview",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_inappwebview-5.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -434,6 +440,54 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "url_launcher",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher-6.0.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_android",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_android-6.0.13",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_ios",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.13",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "uuid",
       "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/uuid-3.0.5",
       "packageUri": "lib/",
@@ -458,13 +512,19 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "youtube_player_iframe",
+      "rootUri": "file:///C:/Users/AngleOfPeace/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/youtube_player_iframe-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "testflutter2",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-11-09T03:53:29.906234Z",
+  "generated": "2021-12-01T01:02:14.358828Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }

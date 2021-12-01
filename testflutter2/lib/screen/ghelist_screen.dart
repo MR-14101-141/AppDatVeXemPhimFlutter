@@ -16,27 +16,32 @@ class GheListScreen extends StatefulWidget {
 }
 
 class _GheListScreen extends State<GheListScreen> {
-  late Map<String, dynamic> dsghe;
-  late List lst;
+  late List dsgheselect = [];
+  late List dsghe = [];
   late bool loading = true;
+  int selectedCard = -1;
 
-  Future<void> loadghelist(int idSC) async {
-    final response = await get(
-        Uri.parse('http://10.0.2.2/tttn/public_html/home/dsGhe/$idSC'));
+  Future<void> loadghelist() async {
+    final response = await get(Uri.parse(
+        'http://10.0.2.2/tttn/public_html/home/dsGhe/${widget.idSC}'));
     setState(() {
-      dsghe = json.decode(response.body);
+      dsghe = (json.decode(response.body) as List);
       loading = false;
     });
   }
 
-  _pullRefresh() {
-    loadghelist(widget.idSC);
+  Future<void> _pullRefresh() async {
+    setState(() {
+      //dsghe = List.empty();
+      loading = true;
+    });
+    loadghelist();
   }
 
   @override
   void initState() {
     super.initState();
-    loadghelist(widget.idSC);
+    loadghelist();
   }
 
   @override
@@ -45,14 +50,8 @@ class _GheListScreen extends State<GheListScreen> {
         backgroundColor: Colors.cyan.shade50,
         body: (loading)
             ? const Center(child: CircularProgressIndicator())
-            : RefreshIndicator(
-                onRefresh: _pullRefresh(),
-                child: SingleChildScrollView(
-                    child: Column(children: [
-                  _backbtn(),
-                  Padding(padding: EdgeInsets.only(top: 2.h)),
-                  _suatchieu(),
-                ])),
+            : Column(
+                children: [_backbtn(), listghe()],
               ));
   }
 
@@ -74,7 +73,7 @@ class _GheListScreen extends State<GheListScreen> {
     );
   }
 
-  Widget _suatchieu() {
+  Widget _forwardbtn() {
     return FadeAnimation(
       delay: 1,
       child: Row(children: [
@@ -83,12 +82,70 @@ class _GheListScreen extends State<GheListScreen> {
             Navigator.pop(context);
           },
           icon: Icon(
-            Icons.arrow_back,
+            Icons.arrow_forward,
             size: 30.sp,
             color: Colors.blue,
           ),
         ),
       ]),
     );
+  }
+
+  Widget listghe() {
+    return RefreshIndicator(
+        onRefresh: _pullRefresh,
+        child: Container(
+          padding: EdgeInsets.all(10.w),
+          child: GridView(
+              shrinkWrap: true,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                mainAxisSpacing: 1.h,
+                crossAxisSpacing: 6.w,
+                crossAxisCount: 4,
+                childAspectRatio: 0.135.h,
+              ),
+              children: List.generate(
+                  dsghe.length,
+                  (index) => (dsghe[index]['statusVe'] == 'Còn trống')
+                      ? ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey.shade400,
+                          ),
+                          onPressed: () => {
+                            setState(() {
+                              dsgheselect.add(dsghe[index]);
+                              dsghe[index]['statusVe'] = 'Đặt';
+                            }),
+                          },
+                          child: const Icon(
+                            Icons.chair,
+                          ),
+                        )
+                      : (dsghe[index]['statusVe'] == 'Đặt')
+                          ? ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.blue.shade900),
+                              onPressed: () => {
+                                setState(() {
+                                  dsgheselect.remove(dsghe[index]);
+                                  dsghe[index]['statusVe'] = 'Còn trống';
+                                }),
+                              },
+                              child: const Icon(
+                                Icons.chair,
+                              ),
+                            )
+                          : Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(2.sp)),
+                                color: Colors.red,
+                              ),
+                              child: const Icon(
+                                Icons.chair,
+                                color: Colors.white,
+                              ),
+                            )).toList()),
+        ));
   }
 }

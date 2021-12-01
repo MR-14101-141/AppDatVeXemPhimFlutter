@@ -4,13 +4,32 @@
             "outputFile": "O:\\On\\ANDROID\\testflutter2\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\AngleOfPeace\\.gradle\\caches\\transforms-2\\files-2.1\\fbf664f595d7ff9130aff871adf5780a\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\AngleOfPeace\\.gradle\\caches\\transforms-2\\files-2.1\\b501fc590dfeaec370bc73c1327042d6\\core-1.3.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\AngleOfPeace\\.gradle\\caches\\transforms-2\\files-2.1\\cb16c941b57dd855ef6cf2cf35d2bced\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
                     }
                 }
             ]

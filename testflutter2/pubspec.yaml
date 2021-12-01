@@ -45,6 +45,7 @@ dependencies:
   google_sign_in: ^5.2.1
   flutter_secure_storage: ^4.2.1
   marquee: ^2.2.0
+  youtube_player_iframe: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -72,6 +73,7 @@ flutter:
   assets:
     - assets/loading.gif
     - assets/imdb.png
+    - assets/google.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
