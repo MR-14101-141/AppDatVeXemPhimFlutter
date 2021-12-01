@@ -140,11 +140,11 @@ class _MyBarState extends State<MyBar> {
                       ),
                       BottomNavigationBarItem(
                         icon: Icon(
-                          Icons.settings,
+                          Icons.school,
                           size: 20.sp,
                           //color: Colors.black,
                         ),
-                        label: 'Settings',
+                        label: 'School',
                         backgroundColor: Colors.pink,
                       ),
                     ],

@@ -23,7 +23,14 @@ class PhimRepository {
     lst = (json.decode(response.body)['dsphim']['data'] as List)
         .map((data) => Phim.fromJson(data))
         .toList();
-    pageCount = 1;
+    pageCount = 2;
     return lst;
+  }
+
+  Future<Phim> loadphimddetail(int idphim) async {
+    final response = await get(
+        Uri.parse('http://10.0.2.2/tttn/public_html/home/singlePhim/$idphim'));
+    Phim phim = Phim.fromJson(json.decode(response.body));
+    return phim;
   }
 }

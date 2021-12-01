@@ -6,8 +6,11 @@ import 'package:testflutter2/Bloc/User/bloc_login.dart';
 import 'package:testflutter2/Bloc/User/event_login.dart';
 import 'package:testflutter2/Bloc/User/state_login.dart';
 import 'package:testflutter2/screen/phimlist_screen.dart';
+import 'package:testflutter2/screen/register_screen.dart';
 import '../Animation/_fadeanimation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+
+import 'forgotpass.dart';
 
 typedef IntCallback = Function(int value);
 
@@ -26,6 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool isLoading = false;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   GoogleSignInAccount? user;
+  bool _passwordVisible = false;
 
   Future<void> _handleSignIn() async {
     final googleuser = await _googleSignIn.signIn();
@@ -80,7 +84,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 _btn(),
                 Padding(padding: EdgeInsets.only(top: 1.h)),
                 _googlebtn(),
-                _txtbtn(),
+                Padding(padding: EdgeInsets.only(top: 2.h)),
+                _register(),
+                _forgotpassword(),
               ],
             ),
           )),
@@ -89,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _logo() {
     return SizedBox(
-      height: 45.h,
+      height: 35.h,
       child: Stack(
         children: <Widget>[
           FadeAnimation(
@@ -105,8 +111,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               'https://rapphimmeme.000webhostapp.com/hinhanh/Phim/2.jpg'),
                           fit: BoxFit.cover),
                     ),
-                    width: 57.w,
-                    height: 30.h,
+                    width: 40.w,
+                    height: 20.h,
                   ))),
           FadeAnimation(
               delay: 1.5,
@@ -114,8 +120,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   angle: -3.14 / 30.0,
                   child: Container(
                     margin: EdgeInsets.only(left: 26.w, top: 10.h),
-                    width: 57.w,
-                    height: 30.h,
+                    width: 40.w,
+                    height: 20.h,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.sp),
                         image: const DecorationImage(
@@ -162,8 +168,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: TextField(
                       style: TextStyle(
                           color: Colors.blue.shade900, fontSize: 12.sp),
-                      decoration: const InputDecoration(
-                          border: InputBorder.none, hintText: "Email"),
+                      decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Email",
+                          suffixIcon: Icon(
+                            Icons.alternate_email,
+                            color: Theme.of(context).primaryColorDark,
+                          )),
                       onChanged: (text) {
                         setState(() {
                           emailKH = text;
@@ -173,11 +184,27 @@ class _LoginScreenState extends State<LoginScreen> {
                 Container(
                   padding: EdgeInsets.all(2.w),
                   child: TextField(
-                      obscureText: true,
+                      obscureText: !_passwordVisible,
                       style: TextStyle(
                           color: Colors.blue.shade900, fontSize: 12.sp),
-                      decoration: const InputDecoration(
-                          border: InputBorder.none, hintText: "Password"),
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: "Password",
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            _passwordVisible
+                                ? Icons.visibility
+                                : Icons.visibility_off,
+                            color: Theme.of(context).primaryColorDark,
+                          ),
+                          onPressed: () {
+                            // Update the state i.e. toogle the state of passwordVisible variable
+                            setState(() {
+                              _passwordVisible = !_passwordVisible;
+                            });
+                          },
+                        ),
+                      ),
                       onChanged: (text) {
                         setState(() {
                           passwordKH = text;
@@ -190,8 +217,16 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _btn() {
     return BlocBuilder<LoginBloc, LoginState>(builder: (context, state) {
-      return InkWell(
-          onTap: () => showDialog(
+      return ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            shadowColor: Colors.black,
+            primary: Colors.blue,
+            elevation: 10,
+            fixedSize: Size(60.w, 6.h),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(5.sp))),
+          ),
+          onPressed: () => showDialog(
               context: context,
               builder: (BuildContext context) => AlertDialog(
                     title: Text(
@@ -265,43 +300,80 @@ class _LoginScreenState extends State<LoginScreen> {
                   )),
           child: FadeAnimation(
               delay: 2,
-              child: Ink(
-                height: 8.5.h,
-                width: 80.w,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5.sp),
-                  color: Colors.blue,
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Padding(padding: EdgeInsets.only(top: 1.h)),
-                    Text(
-                      "Login",
-                      style: TextStyle(color: Colors.white, fontSize: 28.sp),
-                    )
-                  ],
-                ),
+              child: Text(
+                "Login",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 25.sp),
               )));
     });
   }
 
   Widget _googlebtn() {
     return ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          elevation: 10,
+          shadowColor: Colors.black,
+          onPrimary: Colors.black26,
+          primary: Colors.white,
+          fixedSize: Size(60.w, 6.h),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(5.sp))),
+        ),
         onPressed: () {
           _handleSignIn();
         },
-        child: const Text('Google'));
+        child: FadeAnimation(
+          delay: 2,
+          child: Image.asset('assets/google.png', height: 3.h, width: 10.w),
+        ));
   }
 
-  Widget _txtbtn() {
+  Widget _register() {
     return FadeAnimation(
         delay: 1,
-        child: InkWell(
-          onTap: () {},
+        child: TextButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const RegisterScreen(
+                        title: 'register',
+                      )),
+            );
+          },
           child: Text(
-            "Forgot Password ?",
-            style: TextStyle(color: Colors.blue.shade900, fontSize: 15.sp),
+            "Don't have account?",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.blue.shade900,
+              fontSize: 12.sp,
+            ),
+          ),
+        ));
+  }
+
+  Widget _forgotpassword() {
+    return FadeAnimation(
+        delay: 1,
+        child: TextButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => const ResetPasswordScreen(
+                        title: 'reset password',
+                      )),
+            );
+          },
+          child: Text(
+            "Forgot password?",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.blue.shade900,
+              fontSize: 12.sp,
+            ),
           ),
         ));
   }

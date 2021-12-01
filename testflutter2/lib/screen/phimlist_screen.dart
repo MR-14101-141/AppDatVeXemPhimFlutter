@@ -3,6 +3,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:marquee/marquee.dart';
@@ -17,6 +18,7 @@ import 'package:testflutter2/Bloc/Phim/state_phim.dart';
 import 'package:testflutter2/repository/Model/dienvien.dart';
 import 'package:testflutter2/repository/Model/loaiphim.dart';
 import 'package:testflutter2/repository/Model/phim.dart';
+import 'package:testflutter2/screen/phimdetail_screen.dart';
 // import 'package:http/http.dart' as http;
 import '../Animation/_slideanimation.dart';
 
@@ -61,6 +63,7 @@ class _PhimListState extends State<PhimListScreen> {
   @override
   initState() {
     super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
     _scrollController = ScrollController(initialScrollOffset: 5.0)
       ..addListener(_scrollListener);
   }
@@ -81,12 +84,60 @@ class _PhimListState extends State<PhimListScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          _listcategories(),
-          _listactor(),
-          _listphim(),
+          _searchbar(),
+          Padding(
+            padding: EdgeInsets.only(top: 0.5.h),
+          ),
+          Expanded(
+              child: RefreshIndicator(
+                  onRefresh: _pullRefresh,
+                  child: CustomScrollView(
+                      //scrollDirection: Axis.vertical,
+                      controller: _scrollController,
+                      shrinkWrap: true,
+                      slivers: <Widget>[
+                        SliverToBoxAdapter(
+                          child: Container(child: _listcategories()),
+                        ),
+                        SliverToBoxAdapter(
+                          child: Container(child: _listactor()),
+                        ),
+                        _listphim()
+                        //SliverToBoxAdapter(
+                        //child: _listphim(),
+                        //)
+                      ])))
         ],
       ),
     );
+  }
+
+  Widget _searchbar() {
+    return Container(
+        margin: EdgeInsets.only(top: 0.5.h, left: 1.w, right: 1.w),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5.sp),
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.blue.shade900,
+              )
+            ]),
+        child: Container(
+          padding: EdgeInsets.all(2.w),
+          child: TextField(
+            readOnly: true,
+            onTap: () => {},
+            style: TextStyle(color: Colors.blue.shade900, fontSize: 12.sp),
+            decoration: InputDecoration(
+                border: InputBorder.none,
+                hintText: "Search",
+                suffixIcon: Icon(
+                  Icons.search,
+                  color: Theme.of(context).primaryColorDark,
+                )),
+          ),
+        ));
   }
 
   Widget _listcategories() {
@@ -233,144 +284,140 @@ class _PhimListState extends State<PhimListScreen> {
   }
 
   Widget _listphim() {
-    return Expanded(
-        child: Container(
-            //width: 100.w,
-            //height: 80.h,
-            margin: EdgeInsets.all(2.w),
-            // constrain height
-            child: BlocBuilder<PhimBloc, PhimState>(builder: (context, state) {
-              //late List<Phim> list;
-              if (state is LoadDsphimSucess) {
-                listphim = state.lst;
-                return RefreshIndicator(
-                    onRefresh: _pullRefresh,
-                    child: GridView.count(
-                      mainAxisSpacing: 1.h,
-                      crossAxisSpacing: 2.w,
-                      crossAxisCount: 2,
-                      childAspectRatio: 0.07.h,
-                      physics: const BouncingScrollPhysics(),
-                      controller: _scrollController,
-                      scrollDirection: Axis.vertical,
-                      shrinkWrap: true,
-                      children: List.generate(
-                        listphim.length + 1,
-                        (index) {
-                          if (index == listphim.length) {
-                            return const Center(
-                                child: CircularProgressIndicator());
-                          }
-                          return SlideAnimation(
-                              delay: 3,
-                              child: Stack(children: <Widget>[
-                                Card(
-                                  elevation: 20,
-                                  color: Colors.white,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(7.sp),
-                                  ),
-                                  child: Column(children: [
-                                    Expanded(
-                                        child: CachedNetworkImage(
-                                      //width: 20.w,
-                                      //height: 10.h,
-                                      imageUrl:
-                                          'https://rapphimmeme.000webhostapp.com/hinhanh/Phim/${listphim[index].imgPhim}',
-                                      imageBuilder: (context, imageProvider) =>
-                                          Container(
-                                        padding: EdgeInsets.only(
-                                            top: 0.1.h, left: 3.w),
-                                        margin: EdgeInsets.all(6.sp),
-                                        decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(5.sp),
-                                            image: DecorationImage(
-                                              image: imageProvider,
-                                              fit: BoxFit.cover,
-                                            )),
-                                        //child: FadeInImage.assetNetwork(
-                                        // placeholder: 'assets/loading.gif',
-                                        // image:
-                                        // 'https://rapphimmeme.000webhostapp.com/hinhanh/Phim/${lst[index]["imgPhim"]}',
-                                        // fit: BoxFit.cover,
-                                        // ),
-                                      ),
-                                      placeholder: (context, url) => Container(
-                                          padding: EdgeInsets.only(
-                                              top: 0.1.h, left: 3.w),
-                                          margin: EdgeInsets.all(6.sp),
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(5.sp),
-                                          ),
-                                          child: const Center(
-                                            child: CircularProgressIndicator(),
-                                          )),
-                                      errorWidget: (context, url, error) =>
-                                          Container(
-                                              padding: EdgeInsets.only(
-                                                  top: 0.1.h, left: 3.w),
-                                              margin: EdgeInsets.all(6.sp),
-                                              decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(5.sp),
-                                              ),
-                                              child: const Center(
-                                                  child: Icon(Icons.error))),
-                                    )),
-                                    Text(
-                                      listphim[index].tenPhim,
-                                      style: GoogleFonts.lato(
-                                          fontSize: 15.sp,
-                                          color: Colors.blue.shade800,
-                                          fontWeight: FontWeight.bold),
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                    Text(
-                                      'Thời lượng: ${listphim[index].thoiluongPhim}',
-                                      style: TextStyle(
-                                        fontSize: 12.sp,
-                                        color: Colors.blue.shade800,
-                                      ),
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                    Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Image.asset('assets/imdb.png',
-                                              height: 5.h, width: 10.w),
-                                          Text(
-                                            listphim[index].rate,
-                                            style: TextStyle(
-                                              fontSize: 12.sp,
-                                              color: Colors.blue.shade800,
-                                            ),
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                        ])
-                                  ]),
+    return BlocBuilder<PhimBloc, PhimState>(
+      builder: (context, state) {
+        //late List<Phim> list;
+        if (state is LoadDsphimSucess) {
+          listphim = state.lst;
+          return SliverGrid(
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                if (index == state.lst.length) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                return SlideAnimation(
+                    delay: 3,
+                    child: Stack(children: <Widget>[
+                      Card(
+                        elevation: 20,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(7.sp),
+                        ),
+                        child: Column(children: [
+                          Expanded(
+                              child: CachedNetworkImage(
+                            //width: 20.w,
+                            //height: 10.h,
+                            imageUrl:
+                                'https://rapphimmeme.000webhostapp.com/hinhanh/Phim/${listphim[index].imgPhim}',
+                            imageBuilder: (context, imageProvider) => Container(
+                              padding: EdgeInsets.only(top: 0.1.h, left: 3.w),
+                              margin: EdgeInsets.all(6.sp),
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5.sp),
+                                  image: DecorationImage(
+                                    image: imageProvider,
+                                    fit: BoxFit.cover,
+                                  )),
+                              //child: FadeInImage.assetNetwork(
+                              // placeholder: 'assets/loading.gif',
+                              // image:
+                              // 'https://rapphimmeme.000webhostapp.com/hinhanh/Phim/${lst[index]["imgPhim"]}',
+                              // fit: BoxFit.cover,
+                              // ),
+                            ),
+                            placeholder: (context, url) => Container(
+                                padding: EdgeInsets.only(top: 0.1.h, left: 3.w),
+                                margin: EdgeInsets.all(6.sp),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5.sp),
                                 ),
-                                Positioned.fill(
-                                    child: Material(
-                                        borderRadius:
-                                            BorderRadius.circular(7.sp),
-                                        color: Colors.transparent,
-                                        child: InkWell(
-                                          onTap: () {},
-                                        )))
-                              ]));
-                        },
-                      ).toList(),
-                      padding: EdgeInsets.only(bottom: 9.h),
-                    ));
-              } else if (state is LoadDsPhimFail) {
-                debugPrint(state.err);
-                return Center(child: Text(state.err));
-              } else {
-                return const Center(child: CircularProgressIndicator());
-              }
-            })));
+                                child: const Center(
+                                  child: CircularProgressIndicator(),
+                                )),
+                            errorWidget: (context, url, error) => Container(
+                                padding: EdgeInsets.only(top: 0.1.h, left: 3.w),
+                                margin: EdgeInsets.all(6.sp),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5.sp),
+                                ),
+                                child: const Center(child: Icon(Icons.error))),
+                          )),
+                          Text(
+                            listphim[index].tenPhim,
+                            style: GoogleFonts.lato(
+                                fontSize: 15.sp,
+                                color: Colors.blue.shade800,
+                                fontWeight: FontWeight.bold),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Text(
+                            'Thời lượng: ${listphim[index].thoiluongPhim}',
+                            style: TextStyle(
+                              fontSize: 12.sp,
+                              color: Colors.blue.shade800,
+                            ),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset('assets/imdb.png',
+                                    height: 5.h, width: 10.w),
+                                Text(
+                                  listphim[index].rate,
+                                  style: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: Colors.blue.shade800,
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ])
+                        ]),
+                      ),
+                      Positioned.fill(
+                          child: Material(
+                              borderRadius: BorderRadius.circular(7.sp),
+                              color: Colors.transparent,
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => PhimDetailScreen(
+                                              title: 'detail',
+                                              idPhim: listphim[index].idPhim,
+                                            )),
+                                  );
+                                },
+                              )))
+                    ]));
+              },
+              childCount: state.lst.length + 1,
+            ),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              mainAxisSpacing: 1.h,
+              crossAxisSpacing: 2.w,
+              crossAxisCount: 2,
+              childAspectRatio: 0.07.h,
+            ),
+          );
+        } else if (state is LoadFail) {
+          debugPrint(state.err);
+          return SliverToBoxAdapter(
+              child: SizedBox(
+                  width: 100.w,
+                  height: 100.w,
+                  child: Center(child: Text(state.err))));
+        } else {
+          return SliverToBoxAdapter(
+              child: SizedBox(
+                  width: 100.w,
+                  height: 150.w,
+                  child: const Center(child: CircularProgressIndicator())));
+        }
+      },
+    );
   }
 }

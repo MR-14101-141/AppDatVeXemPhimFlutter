@@ -7,8 +7,13 @@ class LoadDsphimSucess extends PhimState {
   List<Phim> lst;
 }
 
-class LoadDsPhimFail extends PhimState {
-  LoadDsPhimFail(this.err);
+class LoadphimdetailSucess extends PhimState {
+  LoadphimdetailSucess(this.phim);
+  Phim phim;
+}
+
+class LoadFail extends PhimState {
+  LoadFail(this.err);
   final String err;
 }
 
